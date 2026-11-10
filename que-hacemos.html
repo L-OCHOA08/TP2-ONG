@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cursos, talleres y acompañamiento gratuitos para aprender tecnología desde cero.">
+    <link rel="stylesheet" href="style.css">
+    <title>Qué hacemos · Código para Todos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="index.html">
+                <img src="logo.svg" alt="">
+                <p>Código para Todos</p>
+            </a>
+
+            <button class="hamburguesa" type="button" aria-label="Abrir menú" aria-expanded="false" onclick="flexToggle()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        <ul>
+            <li><a class="link" href="que-hacemos.html" aria-current="page">Qué hacemos</a></li>
+            <li><a class="link" href="sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a class="link" href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <a class="link nav--donar" href="donar.html">DONAR</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro--que-hacemos">
+            <div>
+                <h1 class="titulo--pagina">Aprendé tecnología desde cero, sin costo.</h1>
+                <p class="intro--texto">Cursos gratuitos, talleres de programación, alfabetización digital y acompañamiento educativo para jóvenes que quieren dar su primer paso. No necesitás experiencia previa.</p>
+                <div class="botones">
+                    <a class="boton--principal" href="contacto.html#inscripcion">Inscribite gratis</a>
+                    <a class="boton--secundario" href="#oferta-programas">Conocer los programas</a>
+                </div>
+            </div>
+            <img class="imagen--intro" src="hero.jpg" alt="Jóvenes aprendiendo tecnología en un taller">
+        </section>
+
+        <section class="programas--oferta" id="oferta-programas">
+            <h2 class="titulo--seccion">Nuestros programas</h2>
+            <p class="subtitulo">Elegí por dónde empezar. Todos son gratuitos.</p>
+            <div class="fila">
+            <article class="caja">
+                <h3>Programación desde cero</h3>
+                <p>Lógica y primeros pasos en código, con proyectos simples desde la primera clase.</p>
+                <dl class="datos">
+                    <div><dt>Nivel</dt><dd>Principiante</dd></div>
+                    <div><dt>Modalidad</dt><dd>Presencial y virtual</dd></div>
+                    <div><dt>Duración</dt><dd>[A definir]</dd></div>
+                    <div><dt>Requisitos</dt><dd>Ninguno</dd></div>
+                </dl>
+                <a class="boton--principal" href="contacto.html?programa=programacion#inscripcion">Inscribite gratis</a>
+            </article>
+            <article class="caja">
+                <h3>Desarrollo web</h3>
+                <p>Diseñá y publicá tus propios sitios con HTML, CSS y JavaScript.</p>
+                <dl class="datos">
+                    <div><dt>Nivel</dt><dd>Inicial</dd></div>
+                    <div><dt>Modalidad</dt><dd>Presencial y virtual</dd></div>
+                    <div><dt>Duración</dt><dd>[A definir]</dd></div>
+                    <div><dt>Requisitos</dt><dd>[A definir]</dd></div>
+                </dl>
+                <a class="boton--principal" href="contacto.html?programa=desarrollo-web#inscripcion">Inscribite gratis</a>
+            </article>
+            <article class="caja">
+                <h3>Herramientas digitales</h3>
+                <p>Habilidades esenciales para estudiar, trabajar y desenvolverte en la vida cotidiana.</p>
+                <dl class="datos">
+                    <div><dt>Nivel</dt><dd>Principiante</dd></div>
+                    <div><dt>Modalidad</dt><dd>Presencial y virtual</dd></div>
+                    <div><dt>Duración</dt><dd>[A definir]</dd></div>
+                    <div><dt>Requisitos</dt><dd>Ninguno</dd></div>
+                </dl>
+                <a class="boton--principal" href="contacto.html?programa=herramientas-digitales#inscripcion">Inscribite gratis</a>
+            </article>
+            </div>
+        </section>
+
+        <section class="acompanamiento">
+            <h2 class="titulo--seccion">Cómo te acompañamos</h2>
+            <p class="subtitulo">Aprender es más fácil cuando no lo hacés solo.</p>
+            <div class="fila fila--4">
+            <article class="caja"><h3>Talleres presenciales</h3><p>En espacios comunitarios del AMBA, con trabajo colaborativo.</p></article>
+            <article class="caja"><h3>Cursos virtuales</h3><p>Materiales y clases online para aprender a tu ritmo, desde donde estés.</p></article>
+            <article class="caja"><h3>Mentoría</h3><p>Docentes y voluntarios que te orientan paso a paso.</p></article>
+            <article class="caja"><h3>Equipos</h3><p>Reacondicionamos y entregamos computadoras para que puedas estudiar.</p></article>
+            </div>
+        </section>
+
+        <section class="como-empezar">
+            <h2 class="titulo--seccion">Cómo empezar</h2>
+            <ol class="fila pasos">
+            <li><span class="paso--numero">1</span><h3>Inscribite</h3><p>Completá un formulario breve. No pedimos experiencia previa.</p></li>
+            <li><span class="paso--numero">2</span><h3>Elegí tu programa</h3><p>Te ayudamos a encontrar el nivel y la modalidad que mejor te queden.</p></li>
+            <li><span class="paso--numero">3</span><h3>Empezá a crear</h3><p>Aprendé con proyectos propios, acompañado por tu mentor o mentora.</p></li>
+            </ol>
+        </section>
+
+        <section class="cierre--que-hacemos">
+            <h2 class="titulo--seccion">No necesitás saber programar para empezar.</h2>
+            <p>Solo necesitás una oportunidad para aprender.</p>
+            <a class="boton--claro" href="contacto.html#inscripcion">Inscribite gratis</a>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="footer--contacto">
+            <h2>codigoparatodos@gmail.com</h2>
+            <p>CABA, Argentina</p>
+            <p>Lima 757</p>
+            <p>Tel. +54 9 011 1234-5678</p>
+        </div>
+
+        <div class="footer--suscribirse">
+            <form>
+                <input type="email" name="email" id="email--footer" placeholder="Email">
+                <input type="submit" value="Suscribirse" id="button--footer">
+            </form>
+        </div>
+
+        <div class="footer--navegacion">
+            <ul>
+                <li><a class="link" href="#">Inicio</a></li>
+                <li><a class="link" href="que-hacemos.html">Qué hacemos</a></li>
+                <li><a class="link" href="sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a class="link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <h1>Código para Todos</h1>
+
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

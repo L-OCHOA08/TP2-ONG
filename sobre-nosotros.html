@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quiénes somos, qué problema buscamos resolver y los valores de Código para Todos.">
+    <link rel="stylesheet" href="style.css">
+    <title>Sobre nosotros · Código para Todos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="index.html">
+                <img src="logo.svg" alt="">
+                <p>Código para Todos</p>
+            </a>
+
+            <button class="hamburguesa" type="button" aria-label="Abrir menú" aria-expanded="false" onclick="flexToggle()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        <ul>
+            <li><a class="link" href="que-hacemos.html">Qué hacemos</a></li>
+            <li><a class="link" href="sobre-nosotros.html" aria-current="page">Sobre nosotros</a></li>
+            <li><a class="link" href="contacto.html">Contacto</a></li>
+        </ul>
+
+        <a class="link nav--donar" href="donar.html">DONAR</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro--sobre-nosotros">
+            <div>
+                <h1 class="titulo--pagina">Creemos que el código es para todas las personas.</h1>
+                <p class="intro--texto">Código para Todos es una ONG argentina que promueve la inclusión digital mediante la educación tecnológica gratuita, brindando herramientas y oportunidades para que más jóvenes puedan construir su futuro.</p>
+            </div>
+            <img class="imagen--intro" src="conocenos-img.jpg" alt="Dos estudiantes sonríen mientras trabajan juntas en una computadora">
+        </section>
+
+        <section class="problema">
+            <h2 class="titulo--seccion">El problema que queremos cambiar</h2>
+            <p class="subtitulo">La brecha digital no es solo falta de computadoras o de conexión.</p>
+            <div class="fila">
+            <article class="caja"><h3>Acceso</h3><p>Muchos jóvenes no tienen dispositivos adecuados ni recursos para estudiar tecnología.</p></article>
+            <article class="caja"><h3>Conocimiento y orientación</h3><p>Cuesta empezar sin guía: aprender a programar y usar herramientas digitales requiere acompañamiento.</p></article>
+            <article class="caja"><h3>Oportunidades</h3><p>Sin habilidades digitales se limitan las opciones académicas y laborales.</p></article>
+            </div>
+        </section>
+
+        <section class="mision-vision">
+            <div class="fila">
+                <article class="caja">
+                    <h3>Misión</h3>
+                    <p>Brindar acceso gratuito a la educación tecnológica mediante cursos, talleres y recursos digitales, acompañando a jóvenes con menos oportunidades para que desarrollen habilidades informáticas y las usen en sus estudios, proyectos personales y futuro laboral.</p>
+                </article>
+                <article class="caja">
+                    <h3>Visión</h3>
+                    <p>Una Argentina en la que todas las personas tengan oportunidades reales de acceder al conocimiento tecnológico, desarrollar sus capacidades digitales y participar activamente de la sociedad digital.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="valores">
+            <h2 class="titulo--seccion">Nuestros valores</h2>
+            <p class="subtitulo">Lo que guía cada curso, taller y decisión.</p>
+            <div class="fila fila--5">
+            <article class="caja"><h3>Igualdad de oportunidades</h3><p>Cursos gratuitos, materiales accesibles y convocatorias abiertas.</p></article>
+            <article class="caja"><h3>Educación</h3><p>Talleres, cursos prácticos y recursos de aprendizaje.</p></article>
+            <article class="caja"><h3>Inclusión</h3><p>Contenidos para principiantes, lenguaje claro y web accesible.</p></article>
+            <article class="caja"><h3>Innovación</h3><p>Proyectos prácticos, contenidos actualizados y aprendizaje experimentando.</p></article>
+            <article class="caja"><h3>Transparencia</h3><p>Información clara sobre programas, donaciones y resultados.</p></article>
+            </div>
+        </section>
+
+        <section class="historia-alcance">
+            <div class="fila">
+                <article class="caja">
+                    <h3>Nuestra historia</h3>
+                    <p class="marcador">[Historia de la organización: cómo surgió la idea, quiénes la impulsaron y qué los motivó.]</p>
+                </article>
+                <article class="caja">
+                    <h3>Dónde trabajamos</h3>
+                    <p>Empezamos en el Área Metropolitana de Buenos Aires, con talleres presenciales en espacios comunitarios y cursos virtuales para todo el país.</p>
+                    <p>Nuestro objetivo es expandirnos de forma progresiva hacia otras provincias.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="cierre--sobre-nosotros">
+            <h2 class="titulo--seccion">Sumate a Código para Todos</h2>
+            <p>Aprendé con nosotros o ayudá a que otros puedan hacerlo.</p>
+            <div class="botones">
+                <a class="boton--claro" href="contacto.html#inscripcion">Inscribite gratis</a>
+                <a href="contacto.html#consultas">Quiero ser voluntario</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="footer--contacto">
+            <h2>codigoparatodos@gmail.com</h2>
+            <p>CABA, Argentina</p>
+            <p>Lima 757</p>
+            <p>Tel. +54 9 011 1234-5678</p>
+        </div>
+
+        <div class="footer--suscribirse">
+            <form>
+                <input type="email" name="email" id="email--footer" placeholder="Email">
+                <input type="submit" value="Suscribirse" id="button--footer">
+            </form>
+        </div>
+
+        <div class="footer--navegacion">
+            <ul>
+                <li><a class="link" href="#">Inicio</a></li>
+                <li><a class="link" href="que-hacemos.html">Qué hacemos</a></li>
+                <li><a class="link" href="sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a class="link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <h1>Código para Todos</h1>
+
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

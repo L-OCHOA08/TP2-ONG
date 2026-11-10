@@ -1,0 +1,1200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+
+.manrope {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.inter{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+    --contraste: #fff;
+    --background: #eeeff1;
+    --principal: #173d5b;
+    --textos-secundarios: #2f7192;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, p, a, li{
+    font-family: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--principal);
+    font-weight: 700;
+}
+
+body {
+    background-color: #eeeff1;
+}
+
+nav {
+    background-color: var(--contraste);
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 1rem;
+    height: 10dvh;
+    align-items: center;
+    border-bottom: 1px solid #d4d6d8;
+    
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo p {
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+nav div, nav ul{
+    display: flex;
+    gap: .5rem;
+}
+
+nav ul {
+    gap: 2rem;
+    list-style: none;
+    transform: translateX(-40%);
+}
+
+nav a {
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: var(--principal);
+    color: #fff;
+}
+
+main {
+    padding: 0 10dvw;
+    margin: auto;
+    background-color: var(--background);
+}
+
+#hero {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: 90dvh;
+}
+
+.izq--hero, .der--hero {
+    width: 50%;
+}
+
+#hero h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 4.5rem;
+}
+
+#hero p {
+    color: var(--textos-secundarios);
+    font-weight: 700;
+}
+
+#hero #hero--descripcion {
+    color: var(--principal);
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 2rem 0 4rem 0;
+}
+
+#hero a {
+    padding: 1rem 5rem;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 1rem;
+}
+
+.boton--donar {
+    text-decoration: none;
+    background-color: var(--principal);
+    color: #fff;
+}
+
+.der--hero {
+    display: flex;
+    justify-content: center;
+}
+
+#img--hero {
+    width: 90%;
+    height: 75dvh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* PROGRAMAS */
+
+#programas {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    background-color:var(--background);
+    height: 60dvh;
+}
+
+#programas h2 {
+    font-size: 2.2rem;
+    color: var(--principal);
+}
+
+#programas p {
+    font-weight: 500;
+    margin-top: .5rem;
+    font-size: 1rem;
+}
+
+.tarjetas--contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.tarjeta {
+    width: 20dvw;
+    height: 30dvh;
+    border-radius: 10px;
+    box-shadow: 0rem 0rem 1rem #00000042;
+    background-color: var(--contraste);
+    position: relative;
+}
+
+.tarjeta--numero {
+    font-size: 2rem;
+    font-weight: 900;
+    font-family: 'Inter';
+    color: var(--contraste);
+    position: absolute;
+    left: 10%;
+    top: 5%;
+    background-color: var(--principal);
+    padding: 0.9rem 1rem;
+    border-radius: 50%;
+}
+
+.tarjeta .tarjeta--desc, .tarjeta h3 {
+    position: absolute;
+    left: 10%;
+    top: 40%;
+}
+
+.tarjeta .tarjeta--desc {
+    top: 55%;
+    color: var(--textos-secundarios);
+}
+
+.tarjeta h3 {
+    color: var(--principal);
+    font-size: 1.4rem;
+}
+
+
+/* =====================================================
+   PÁGINAS INTERNAS (qué hacemos, sobre nosotros,
+   contacto, donar). Reutilizan las variables de arriba.
+   ===================================================== */
+
+:root {
+    --sombra: 0rem 0rem 1rem #00000042;
+    --borde: #d4d6d8;
+    --fuente: 'Manrope', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+[id] {
+    scroll-margin-top: 2rem;
+}
+
+/* Navegación: links de texto dentro de la lista (el botón DONAR queda igual) */
+
+nav a.logo {
+    padding: 0;
+    background: none;
+    border-radius: 0;
+}
+
+.logo img {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: .6rem;
+}
+
+nav ul a {
+    padding: .3rem 0;
+    border-radius: 0;
+    background: none;
+    color: var(--principal);
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul a:hover,
+nav ul a[aria-current="page"] {
+    border-bottom-color: var(--textos-secundarios);
+}
+
+nav > a:hover {
+    background-color: var(--textos-secundarios);
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+.opcion input:focus-visible + label {
+    outline: 3px solid var(--textos-secundarios);
+    outline-offset: 3px;
+}
+
+/* Estructura general */
+
+/* Introducción de cada página */
+
+.intro--que-hacemos,
+.intro--sobre-nosotros,
+.intro--contacto,
+.intro--donar {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 4rem 0 2rem;
+}
+
+.intro--contacto,
+.intro--donar {
+    display: block;
+    max-width: 50rem;
+}
+
+.intro--que-hacemos > div,
+.intro--sobre-nosotros > div {
+    flex: 1.1 1 0;
+}
+
+.imagen--intro {
+    flex: .9 1 0;
+    min-width: 0;
+    height: 24rem;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.titulo--pagina {
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 3.4rem;
+    margin-bottom: 1.2rem;
+}
+
+.intro--texto {
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Secciones: cada una tiene su clase; comparten el espaciado vertical */
+
+.programas--oferta,
+.acompanamiento,
+.como-empezar,
+.problema,
+.mision-vision,
+.valores,
+.historia-alcance,
+.formularios--contacto,
+.info--contacto,
+.formas--donar,
+.transparencia {
+    padding: 3rem 0;
+}
+
+.titulo--seccion {
+    font-size: 2.2rem;
+    margin-bottom: .5rem;
+}
+
+.subtitulo {
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+/* Filas de tarjetas (flex) */
+
+.fila {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.fila > * {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.fila--top {
+    align-items: flex-start;
+}
+
+/* Tarjetas e información */
+
+.caja {
+    background-color: var(--contraste);
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    padding: 1.8rem;
+}
+
+.caja h3 {
+    font-size: 1.3rem;
+    margin-bottom: .6rem;
+}
+
+.caja p,
+.caja li {
+    color: var(--textos-secundarios);
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.caja p + p {
+    margin-top: .8rem;
+}
+
+.caja .boton--principal,
+.caja .boton--secundario {
+    display: block;
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.caja ul {
+    padding-left: 1.2rem;
+}
+
+.datos {
+    margin-top: 1rem;
+}
+
+.datos div {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .6rem 0;
+    border-top: 1px solid var(--borde);
+    font-family: var(--fuente);
+    font-size: .95rem;
+}
+
+.datos dt {
+    color: var(--textos-secundarios);
+    font-weight: 500;
+}
+
+.datos dd {
+    color: var(--principal);
+    font-weight: 700;
+    text-align: right;
+}
+
+.pasos {
+    margin-top: 1.5rem;
+    list-style: none;
+}
+
+.paso--numero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    background-color: var(--principal);
+    color: var(--contraste);
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.pasos h3 {
+    font-size: 1.3rem;
+    margin-bottom: .4rem;
+}
+
+.pasos p {
+    font-weight: 500;
+    color: var(--textos-secundarios);
+    line-height: 1.6;
+}
+
+.marcador {
+    font-style: italic;
+}
+
+/* Botones */
+
+.boton--principal,
+.boton--secundario,
+.boton--claro {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    border-radius: 10px;
+    border: 2px solid var(--principal);
+    font-family: var(--fuente);
+    font-size: 1rem;
+    font-weight: 900;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color .2s, color .2s;
+}
+
+.boton--principal {
+    background-color: var(--principal);
+    color: #fff;
+}
+
+.boton--principal:hover {
+    background-color: var(--textos-secundarios);
+    border-color: var(--textos-secundarios);
+}
+
+.boton--secundario {
+    background-color: var(--contraste);
+    color: var(--principal);
+}
+
+.boton--secundario:hover {
+    background-color: var(--principal);
+    color: #fff;
+}
+
+.boton--claro {
+    background-color: var(--contraste);
+    border-color: var(--contraste);
+    color: var(--principal);
+}
+
+.boton--claro:hover {
+    background-color: var(--background);
+}
+
+/* Cierre de cada página */
+
+.cierre--que-hacemos,
+.cierre--sobre-nosotros {
+    margin: 2rem 0 3rem;
+    padding: 3.5rem 2rem;
+    border-radius: 20px;
+    background-color: var(--principal);
+    text-align: center;
+}
+
+.cierre--que-hacemos h2,
+.cierre--que-hacemos p,
+.cierre--sobre-nosotros h2,
+.cierre--sobre-nosotros p {
+    color: #fff;
+}
+
+.cierre--que-hacemos p,
+.cierre--sobre-nosotros p {
+    margin-bottom: 1.8rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.cierre--sobre-nosotros .botones {
+    justify-content: center;
+    align-items: center;
+}
+
+.cierre--sobre-nosotros a:not(.boton--claro) {
+    color: #fff;
+}
+
+/* Formularios */
+
+.campo {
+    margin-bottom: 1.2rem;
+}
+
+.formulario label,
+.formulario legend {
+    display: block;
+    margin-bottom: .4rem;
+    color: var(--principal);
+    font-family: var(--fuente);
+    font-size: .95rem;
+    font-weight: 700;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="number"],
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: .8rem;
+    border: 1px solid #8a9bab;
+    border-radius: 8px;
+    background-color: #fff;
+    color: var(--principal);
+    font-family: var(--fuente);
+    font-size: 1rem;
+}
+
+.campo--doble {
+    display: flex;
+    gap: 1rem;
+}
+
+.campo--doble > div:first-child {
+    flex: 1 1 0;
+}
+
+.campo--doble > div:last-child {
+    flex: 2 1 0;
+}
+
+.campo--check label {
+    display: flex;
+    gap: .6rem;
+    font-weight: 500;
+}
+
+.campo--check input {
+    margin-top: .25rem;
+}
+
+.ayuda {
+    margin-top: .4rem;
+    color: var(--textos-secundarios);
+    font-size: .85rem;
+    font-weight: 500;
+}
+
+.formulario h3 + .ayuda {
+    margin-bottom: 1.4rem;
+}
+
+.formulario fieldset {
+    margin-bottom: 1.2rem;
+    border: 0;
+}
+
+.opciones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .6rem;
+}
+
+.opcion {
+    position: relative;
+}
+
+.opcion input {
+    position: absolute;
+    opacity: 0;
+}
+
+.formulario .opcion label {
+    margin: 0;
+    padding: .7rem 1.2rem;
+    border: 1px solid #8a9bab;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.formulario .opcion input:checked + label {
+    border-color: var(--principal);
+    background-color: var(--principal);
+    color: #fff;
+}
+
+.formulario button {
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to top, #414141, #aeafb1, #eeeff1);
+    padding-bottom: 20rem;
+    position: relative;
+    margin-top: 8rem;
+    padding-left: clamp(1.25rem, 7vw, 7rem);
+    padding-right: clamp(1.25rem, 7vw, 7rem);
+}
+
+footer p {
+    color: #2f7192;
+}
+
+.footer--contacto h2 {
+    color: #173d5b;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 3rem;
+}
+
+.footer--contacto, .footer--suscribirse, .footer--navegacion {
+    padding: 0 2rem;
+    width: 20dvw;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer--suscribirse form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+form #email--footer {
+    border-radius: 20px;
+    border-width: 0;
+    padding: 1rem 1.5rem;
+    width: 150%;
+}
+
+form #button--footer {
+    padding: .5rem 1.5rem;
+    border-radius: 10px;
+    border-width: 0;
+    font-weight: 700;
+    background-color: var(--principal);
+    color: var(--contraste);
+}
+
+.footer--navegacion ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-self: flex-end;
+    gap: 1rem;
+    font-size: 1.5rem;
+    color: #173d5b;
+}
+
+footer h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    font-size: 10rem;
+    bottom: 0;
+    color: #173e5b32;
+}
+
+/* Ajustes generales compartidos */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+header {
+    position: relative;
+    z-index: 10;
+}
+
+nav {
+    min-height: 76px;
+    height: auto;
+    padding: .85rem clamp(1rem, 5vw, 5rem);
+    gap: 1.5rem;
+    background-color: var(--contraste);
+}
+
+nav ul {
+    align-items: center;
+    transform: none;
+    margin-left: auto;
+    gap: 2rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul a {
+    white-space: nowrap;
+}
+
+nav > .nav--donar {
+    flex: 0 0 auto;
+    padding: .8rem 1.3rem;
+    white-space: nowrap;
+}
+
+.hamburguesa {
+    display: none;
+}
+
+main {
+    width: 100%;
+    max-width: 1600px;
+    padding-left: clamp(1.25rem, 6vw, 6rem);
+    padding-right: clamp(1.25rem, 6vw, 6rem);
+}
+
+#hero {
+    min-height: 620px;
+    height: auto;
+    padding: 4rem 0;
+}
+
+.izq--hero,
+.der--hero {
+    min-width: 0;
+}
+
+#hero h1 {
+    font-size: clamp(2.5rem, 4.2vw, 4rem);
+    line-height: 1.12;
+}
+
+#img--hero {
+    display: block;
+    width: 100%;
+    max-height: 560px;
+    height: min(65vh, 560px);
+    object-fit: cover;
+}
+
+#programas {
+    height: auto;
+    padding: 2rem 0 4rem;
+}
+
+.tarjetas--contenedor {
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    flex: 1 1 220px;
+    width: auto;
+    min-width: 0;
+    min-height: 230px;
+    height: auto;
+}
+
+.fila {
+    align-items: stretch;
+}
+
+.caja {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.imagen--intro {
+    width: 100%;
+}
+
+/* TABLETS: 768px a 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    main {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    nav {
+        padding: .8rem 2rem;
+        gap: 1rem;
+    }
+
+    .logo p {
+        font-size: 1.05rem;
+    }
+
+    .logo img {
+        width: 2.1rem;
+        height: 2.1rem;
+    }
+
+    nav ul {
+        gap: .9rem;
+    }
+
+    nav ul a {
+        font-size: .88rem;
+    }
+
+    nav > .nav--donar {
+        padding: .7rem .9rem;
+        font-size: .88rem;
+    }
+
+    #hero {
+        min-height: 0;
+        gap: 1.5rem;
+        padding: 3rem 0;
+    }
+
+    .izq--hero,
+    .der--hero {
+        width: 50%;
+    }
+
+    #hero h1 {
+        font-size: clamp(2.3rem, 4vw, 3.1rem);
+    }
+
+    #hero #hero--descripcion {
+        margin: 1.5rem 0 2rem;
+        font-size: 1rem;
+    }
+
+    #hero .izq--hero > a {
+        display: inline-block;
+        margin: .3rem 0;
+        padding: .85rem 1.1rem;
+        text-align: center;
+    }
+
+    #img--hero {
+        height: 420px;
+    }
+
+    .tarjeta {
+        flex-basis: calc(50% - .75rem);
+        min-height: 210px;
+    }
+
+    .fila {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .fila > * {
+        flex: 1 1 calc(50% - 1rem);
+    }
+
+    .fila--5 > * {
+        flex-basis: calc(33.333% - 1rem);
+    }
+
+    .intro--que-hacemos,
+    .intro--sobre-nosotros {
+        gap: 2rem;
+    }
+
+    .imagen--intro {
+        height: 20rem;
+    }
+
+    .titulo--pagina {
+        font-size: 2.6rem;
+        line-height: 1.15;
+    }
+
+    .caja {
+        padding: 1.4rem;
+    }
+
+    footer {
+        padding: 2.5rem 2rem 12rem;
+    }
+
+    .footer--contacto,
+    .footer--suscribirse,
+    .footer--navegacion {
+        flex-basis: 30%;
+    }
+}
+
+/* MÓVILES: menos de 768px */
+@media (max-width: 767px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: .75rem;
+        padding: .8rem 1rem;
+    }
+
+    nav .logo {
+        margin-right: auto;
+    }
+
+    .logo p {
+        font-size: 1.05rem;
+    }
+
+    .logo img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .hamburguesa {
+        display: flex;
+        order: 2;
+        margin-left: 0;
+        padding: .55rem;
+    }
+
+    .hamburguesa span {
+        width: 1.6rem;
+        height: 3px;
+    }
+
+    nav ul,
+    nav > .nav--donar {
+        display: none;
+    }
+
+    nav.flexToggle ul {
+        display: flex;
+        order: 3;
+        flex: 1 0 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        width: 100%;
+        margin: .25rem 0 0;
+        padding: .5rem 0;
+        border-top: 1px solid var(--borde);
+    }
+
+    nav.flexToggle ul li,
+    nav.flexToggle ul a {
+        width: 100%;
+    }
+
+    nav.flexToggle ul a {
+        display: block;
+        padding: .85rem .25rem;
+        border-bottom: 1px solid var(--borde);
+    }
+
+    nav.flexToggle > .nav--donar.linkToggle {
+        display: block;
+        order: 4;
+        flex: 1 0 100%;
+        width: 100%;
+        margin-top: .25rem;
+        text-align: center;
+    }
+
+    main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #hero {
+        min-height: 0;
+        height: auto;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2rem;
+        padding: 2.5rem 0;
+    }
+
+    .izq--hero,
+    .der--hero {
+        width: 100%;
+    }
+
+    #hero h1 {
+        font-size: clamp(2.15rem, 9vw, 2.8rem);
+        line-height: 1.12;
+    }
+
+    #hero #hero--descripcion {
+        margin: 1.25rem 0 1.75rem;
+        font-size: 1rem;
+    }
+
+    #hero .izq--hero > a {
+        display: inline-block;
+        margin: .3rem 0;
+        padding: .85rem 1rem;
+        text-align: center;
+    }
+
+    #img--hero {
+        height: clamp(220px, 65vw, 380px);
+        max-height: none;
+    }
+
+    #programas {
+        margin-top: 0;
+        padding: 1rem 0 2.5rem;
+        gap: 1.5rem;
+    }
+
+    #programas h2,
+    .titulo--seccion {
+        font-size: 1.75rem;
+    }
+
+    .tarjeta {
+        flex-basis: 100%;
+        min-height: 185px;
+    }
+
+    .intro--que-hacemos,
+    .intro--sobre-nosotros {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1.5rem;
+        padding: 2.5rem 0 1.5rem;
+    }
+
+    .intro--que-hacemos > div,
+    .intro--sobre-nosotros > div {
+        flex: auto;
+    }
+
+    .imagen--intro {
+        flex: auto;
+        height: clamp(210px, 60vw, 320px);
+    }
+
+    .intro--contacto,
+    .intro--donar {
+        padding: 2.5rem 0 1.5rem;
+    }
+
+    .titulo--pagina {
+        font-size: clamp(2rem, 9vw, 2.5rem);
+        line-height: 1.15;
+    }
+
+    .intro--texto {
+        font-size: 1rem;
+    }
+
+    .programas--oferta,
+    .acompanamiento,
+    .como-empezar,
+    .problema,
+    .mision-vision,
+    .valores,
+    .historia-alcance,
+    .formularios--contacto,
+    .info--contacto,
+    .formas--donar,
+    .transparencia {
+        padding: 2rem 0;
+    }
+
+    .fila,
+    .campo--doble {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 1rem;
+    }
+
+    .fila > *,
+    .fila--4 > *,
+    .fila--5 > *,
+    .campo--doble > div:first-child,
+    .campo--doble > div:last-child {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+
+    .caja {
+        padding: 1.25rem;
+    }
+
+    .campo--doble {
+        gap: 0;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .botones a {
+        text-align: center;
+    }
+
+    .cierre--que-hacemos,
+    .cierre--sobre-nosotros {
+        padding: 2.5rem 1.25rem;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 2rem 1rem 9rem;
+        gap: 2rem;
+    }
+
+    .footer--contacto,
+    .footer--suscribirse,
+    .footer--navegacion {
+        width: 100%;
+        flex: none;
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    .footer--contacto h2 {
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        overflow-wrap: anywhere;
+    }
+
+    .footer--navegacion ul {
+        align-items: flex-start;
+        align-self: flex-start;
+        font-size: 1rem;
+    }
+
+    .footer--suscribirse form {
+        align-items: stretch;
+        padding: 0;
+    }
+
+    form #email--footer {
+        width: 100%;
+    }
+
+    footer h1 {
+        bottom: 1rem;
+        font-size: clamp(2.5rem, 11vw, 4rem);
+        line-height: 1;
+    }
+}

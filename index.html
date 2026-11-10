@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Código para Todos · Educación tecnológica</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="index.html">
+                <img src="logo.svg" alt="">
+                <p>Código para Todos</p>
+            </a>
+
+            <button class="hamburguesa" type="button" aria-label="Abrir menú" aria-expanded="false" onclick="flexToggle()">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul>
+                <li><a class="link" href="que-hacemos.html">Qué hacemos</a></li>
+                <li><a class="link" href="sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a class="link" href="contacto.html">Contacto</a></li>
+            </ul>
+
+            <a class="link nav--donar" href="donar.html">DONAR</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="izq--hero">
+                <p>EDUCACIÓN · TECNOLOGÍA · OPORTUNIDADES</p>
+                <h1>La tecnología abre puertas. Aprendé a abrir las tuyas.</h1>
+                <p id="hero--descripcion">Cursos y talleres gratuitos de programación, desarrollo web y herramientas digitales para jóvenes. No necesitás experiencia previa para empezar.</p>
+                <a class="boton--donar" href="donar.html">Donar</a>
+                <a class="boton--secundario" href="que-hacemos.html">Conocer los programas</a>
+            </div>
+            <div class="der--hero">
+                <img id="img--hero" src="hero.jpg" alt="Jóvenes participando de una actividad de aprendizaje tecnológico">
+            </div>
+        </section>
+
+        <section id="programas">
+            <div class="">
+                <h2>Aprendé a tu ritmo</h2>
+                <p>Programas gratuitos, presenciales y virtuales.</p>
+            </div>
+            <div class="tarjetas--contenedor">
+                <div class="tarjeta">
+                    <p class="tarjeta--numero">01</p>
+                    <h3>Programación</h3>
+                    <p class="tarjeta--desc">Desde cero, paso a paso.</p>
+                </div>
+                <div class="tarjeta">
+                    <p class="tarjeta--numero">02</p>
+                    <h3>Desarrollo Web</h3>
+                    <p class="tarjeta--desc">Creá tus proyectos.</p>
+                </div>
+                <div class="tarjeta">
+                    <p class="tarjeta--numero">03</p>
+                    <h3>Herramientas digitales</h3>
+                    <p class="tarjeta--desc">Habilidades esenciales.</p>
+                </div>
+                <div class="tarjeta">
+                    <p class="tarjeta--numero">04</p>
+                    <h3>Comunidad</h3>
+                    <p class="tarjeta--desc">Aprendé con otros.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+        <div class="footer--contacto">
+            <h2>codigoparatodos@gmail.com</h2>
+            <p>CABA, Argentina</p>
+            <p>Lima 757</p>
+            <p>Tel. +54 9 011 1234-5678</p>
+        </div>
+
+        <div class="footer--suscribirse">
+            <form>
+                <input type="email" name="email" id="email--footer" placeholder="Email">
+                <input type="submit" value="Suscribirse" id="button--footer">
+            </form>
+        </div>
+
+        <div class="footer--navegacion">
+            <ul>
+                <li><a class="link" href="#">Inicio</a></li>
+                <li><a class="link" href="que-hacemos.html">Qué hacemos</a></li>
+                <li><a class="link" href="sobre-nosotros.html">Sobre nosotros</a></li>
+                <li><a class="link" href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+
+        <h1>Código para Todos</h1>
+
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
