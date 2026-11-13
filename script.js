@@ -22,7 +22,7 @@ function abrirModal() {
 function mostrarFormulario() {
     document.querySelector(".modal").innerHTML = `
     <h1>Elegí cuánto querés donar</h1>
-    <form onsubmit="enviarDonacion(event)">
+    <form">
         <label for="monto">Monto a donar</label>
         <select id="monto" name="monto" required>
             <option value="" disabled selected>Seleccioná un monto</option>
